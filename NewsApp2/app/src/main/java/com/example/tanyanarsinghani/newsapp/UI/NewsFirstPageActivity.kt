@@ -73,7 +73,7 @@ class NewsFirstPageActivity: AppCompatActivity(), retrofit2.Callback<NewsArticle
                         val country="in"
                         val apikey="2c76206f105a485ba35cb0af49de7805"
                         var newsdata=NewsApiService.create()
-                        newsdata.getSportsNews(country,search,apikey).enqueue(this@NewsFirstPageActivity)
+                        newsdata.getSearchNews(country,search,apikey).enqueue(this@NewsFirstPageActivity)
                     } else {
                         displaylist.clear()
                         displaylist.addAll(data)

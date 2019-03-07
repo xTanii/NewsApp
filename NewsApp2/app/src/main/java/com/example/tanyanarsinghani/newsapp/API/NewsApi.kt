@@ -16,5 +16,5 @@ interface NewsApi {
     @GET("top-headlines?country=in&apiKey=2c76206f105a485ba35cb0af49de7805")
    fun getAllHighlights():retrofit2.Call<NewsArticles>
     @GET("top-headlines")
-    fun getSportsNews(@Query("country") country:String, @Query("category") category:String,@Query("apikey") apikey:String):retrofit2.Call<NewsArticles>
+    fun getSearchNews(@Query("country") country:String, @Query("category") category:String,@Query("apikey") apikey:String):retrofit2.Call<NewsArticles>
 }
